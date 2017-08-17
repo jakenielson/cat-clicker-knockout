@@ -97,11 +97,7 @@ var viewModel = function() {
   };
 
   this.setCat = function(listedCat) {
-    self.catList().forEach(function(catItem){
-      if (listedCat.name() === catItem.name()) {
-        self.currentCat(catItem);
-      }
-    });
+    self.currentCat(listedCat);
   };
 }
 
